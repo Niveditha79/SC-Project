@@ -3,7 +3,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
 
-load_dotenv(override=True)
+load_dotenv()
 
 def get_llm():
     """Initialize the LangChain LLM using Google GenAI."""

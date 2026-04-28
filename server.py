@@ -14,7 +14,7 @@ from agents.model_agent import train_model
 from agents.fairness_agent import compute_fairness_metrics, classify_risk
 from agents.llm_agent import generate_bias_explanation, generate_mitigation_recommendations
 
-load_dotenv(override=True)
+load_dotenv()
 
 app = FastAPI(title="BiasGuard API")
 
