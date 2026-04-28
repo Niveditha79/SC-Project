@@ -35,7 +35,7 @@ templates = Jinja2Templates(directory="templates")
 
 @app.get("/")
 async def read_index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="index.html")
 
 class LoginRequest(BaseModel):
     username: str
